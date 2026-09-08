@@ -1,0 +1,62 @@
+{
+  "model_name": "Ballbar GPR v8 - 180deg excluded - 260903 integrated",
+  "parameters": [
+    "param_1851_X",
+    "param_1851_Z",
+    "param_2003#5_X",
+    "param_2003#5_Z",
+    "param_2048_X",
+    "param_2048_Z",
+    "param_2071_X",
+    "param_2071_Z",
+    "param_2003#3_X",
+    "param_2003#3_Z",
+    "param_2005#1_X",
+    "param_2005#1_Z",
+    "param_2092_X",
+    "param_2092_Z",
+    "param_2069_X",
+    "param_2069_Z",
+    "param_1622_X",
+    "param_1622_Z",
+    "param_2067_X",
+    "param_2067_Z",
+    "param_2360_X",
+    "param_2360_Z",
+    "param_2361_X",
+    "param_2361_Z",
+    "param_2362_X",
+    "param_2362_Z"
+  ],
+  "targets": {
+    "CCW": "ccw_circularity_excl180_um",
+    "CW": "cw_circularity_excl180_um"
+  },
+  "training_rows": 4270,
+  "unique_combinations": 1536,
+  "aggregation": "mean of repeated measurements for identical 26-parameter combinations",
+  "kernel": "ConstantKernel * Matern(nu=1.5) + WhiteKernel",
+  "seed": 20260902,
+  "holdout_260903_new_combo_metrics": {
+    "CCW": {
+      "n": 100,
+      "R2": 0.583819544644719,
+      "MAE_um": 0.9037363374401292,
+      "RMSE_um": 1.1544557057164149,
+      "PI95_coverage": 0.99,
+      "mean_pred_std_um": 1.7750714324298422
+    },
+    "CW": {
+      "n": 100,
+      "R2": 0.8367523251676665,
+      "MAE_um": 1.1409611332519705,
+      "RMSE_um": 1.5034124745215038,
+      "PI95_coverage": 0.99,
+      "mean_pred_std_um": 2.6914808015447456
+    }
+  },
+  "fitted_kernels": {
+    "CCW": "1.62**2 * Matern(length_scale=5.62, nu=1.5) + WhiteKernel(noise_level=0.0165)",
+    "CW": "2.5**2 * Matern(length_scale=8.82, nu=1.5) + WhiteKernel(noise_level=0.0633)"
+  }
+}

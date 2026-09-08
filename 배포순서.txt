@@ -1,0 +1,9 @@
+1. GitHub에서 새 repository 생성
+2. 이 폴더 파일 전체 업로드
+3. Streamlit Community Cloud 접속
+4. GitHub 로그인
+5. Create app
+6. repository 선택
+7. main / app.py 지정
+8. Deploy
+9. 생성된 streamlit.app 주소 공유
